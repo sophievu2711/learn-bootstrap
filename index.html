@@ -56,7 +56,7 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-8 col-sm-4 order-sm-last col-md-3">
+            <div class="col-10 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-10 col-sm col-md">
@@ -76,23 +76,25 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-8 col-sm-4 col-md-3">
+            <div class="col-10 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col-10 col-sm col-md">
-                <div class="media"> 
+            <div class="col-sm col-md">
+                <div class="media">
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <h2 class="mt-0">Weekend Grand Buffet 
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
-                    <img class="d-flex mr-5 img-thumbnail align-self-center"
-                            src="img/buffet.png" alt="buffet">
+                    <img class="d-flex img-thumbnail align-self-center"
+                    src="img/buffet.png" alt="buffet">
                 </div>
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div  class="col-8 col-sm-4 col-md-3">
+            <div  class="col-10 col-sm-4 col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-10 col-sm order-sm-first col-md">
@@ -114,12 +116,9 @@
                     <h3 class="card-header text-white">Reserve a Table</h3>
                     <div class="card-body">
                         <form> 
-                        <dl class="row">
-                            <dt class="col-12 col-sm-4">
-                                <label for="guestnum" class="col-form-label">Number of Guests</label>
-                            </dt>
-                            <dd class="col-6 col-sm">
-                                <div class="form-group row">
+                            <div class="form-group row">
+                                <label for="guestnum" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-md-10">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" id="guestnum1" value="1" checked>
                                         <label class="form-check-label" for="guestnum1"> 1</label>
@@ -145,14 +144,11 @@
                                         <label class="form-check-label" for="guestnum6"> 6</label>
                                     </div>
                                 </div>
-                            </dd>
-                        </dl>
-                        <dl class="row">
-                            <dt class="col-12 col-sm-4">
-                                <label for="datetime" class="col-form-label">Date and Time</label>
-                            </dt>
-                            <dd class="col-12 col-sm">
-                                <div class="form-group row">
+                            </div> 
+                        
+                            <div class="form-group row">
+                                <label for="datetime" class="col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-md-10">
                                     <div class="row">
                                         <div class="col-12 col-sm-5">
                                             <input type="text" class="form-control" id="date" name="date"
@@ -164,11 +160,15 @@
                                         </div>
                                     </div>
                                 </div>
-                            </dd>
-                        </dl>
-                        <dl class="row offset-md-4">
-                            <button type="submit" class="btn btn-primary">Reserve</button>
-                        </dl>
+                            </div>
+
+                            <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary">
+                                            Reserve
+                                        </button>
+                                    </div>
+                                </div>  
                         </form>
                     </div>
                 </div>
